@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+ 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ 	xmlns:context="https://www.springframework.org/schema/context"
+	xmlns:p="https://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ 	https://www.springframework.org/schema/beans/spring-beans.xsd
+ 	https://www.springframework.org/schema/context 
+    https://www.springframework.org/schema/context/spring-context.xsd">
+
+<context:annotation-config />
+
+	<bean class="com.annotations.PaymentGateway " name="PaymentGateway "/>
+
+     
+    <bean class="com.annotations.Order" name="orderclass">
+	<property name="item" value="Java Book" />
+        <property name="price" value="RS 225" />
+</bean>
+
+
+	
+</beans>
